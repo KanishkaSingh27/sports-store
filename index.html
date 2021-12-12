@@ -1,0 +1,246 @@
+<html>
+    <head>
+        <title>Sports shop</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <style>
+            * {
+                font-family: 'Josefin Slab', serif;
+             font-size: 30px;
+            } 
+            body, ul, li{
+                margin:0;
+                padding:0;     
+            }
+            p, li, h1, h2, h3, h4{
+                color:darkslategrey;
+            }
+            body{
+                background-color:darkturquoise;
+            }
+            .wrapper{
+                width:96%;
+                max-width:1700px;
+                margin:0 auto;
+                padding:0 2%;
+
+            }
+            header{
+                background-color:plum ;
+                padding: 10px 0; 
+            }
+            .logo{
+                margin:0;
+                background: url(running.png);
+                background-size:70px 70px;
+                float:left;
+                width: 75px;
+                height:75px;
+                 
+            }
+            header nav {
+                float:right;
+            }
+            header:after{
+                 content: "";
+                 clear: both;
+                 display: block;
+            }
+            header nav li{
+                list-style-type: none;
+                float:left;
+                margin-top: 25px;
+                margin-bottom: 20px;
+                margin-left: 30px;
+            }
+            header nav li a{
+                text-decoration: none;
+                color:midnightblue;
+                font-size: 25px;
+                
+            }
+            #main-banner{
+                width: 100%;
+                max-height: 750px;
+                overflow: hidden;
+            }
+            #main-banner img{
+                width:100%;
+            }
+            #slider{
+                overflow:hidden;
+            }
+            #slides{
+                position:relative;
+                width: 500%;
+                margin:0;
+                left:0;
+                text-align:left;
+                font-size: 0px;
+                animation: slidy 15s infinite;
+            }
+            #slides img{
+                width:20%;
+                float:left;
+            }
+            @keyframes slidy{
+                0%{left: 0%;}
+                28%{left: 0%;}
+                33%{left: -100%;}
+                61%{left: -100%;}
+                66%{left: -200%;}
+                94%{left: -200%;}
+                100%{left: 0%;}
+            }
+            #usp{
+                margin-top: 100px;
+                
+            }
+            #usp li {
+                float:left;
+                width: 23%;
+                padding:10px;
+                text-align: center;
+                list-style-type: none;
+            }
+            #usp li img{
+                height: 250px;
+                padding: 15px;
+                background-color:lightpink;
+                border-radius: 50%;
+            }
+            #usp:after{
+                 content: "";
+                 clear: both;
+                 display: block;
+            }
+            #products{
+                padding-top:30px;
+                margin-top:30px;
+            }
+            #products li{
+                float:left;
+                width:32%;
+                list-style-type: none;
+                text-align: center;
+            }
+            #products li img{
+                width:100%;
+                border-radius:10%;
+            }
+            #products li:nth-child(even){
+                margin: 0 2%;
+
+            }
+            #products:after{
+                 content: "";
+                 clear: both;
+                 display: block;
+            }
+            footer{
+                width:100%;
+                background-color: hotpink;
+                padding: 30px 0;
+                margin-top: 60px;
+                text-align: center;
+                
+            }
+            footer li{
+                list-style-type:none;
+            }
+            .greet{
+                background-color:rgb(0, 104, 145);
+                color:white;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                text-align: center;
+            }
+        </style>
+        
+            
+        <header>
+            <div class="wrapper">
+                <div class="logo"></div>
+                    <nav>
+                        <ul>
+                            <li><a href="#" >Home</a></li>
+                            <li><a href="#usp">About Us</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                
+            </div>
+        </header>
+        
+        <div id="main-banner">
+            <div id="slider">
+                <div id="slides">
+                    <img src="News-Worsley-Activity-Course.jpg">
+                    <img src="OIP (4).jpg">
+                    <img src="chewits-sports-kids1.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <section id="usp">
+                <ul>
+                    <li>
+                        <img src="sport.png">
+                        <h2>Wide range of products</h2>
+                    </li>
+                    <li>
+                        <img src="C:\Users\chand\Downloads\customer-review (1).png">
+                        <h2>Happy customers</h2>
+                    </li>
+                    <li><img src="satisfaction (1).png">
+                    <h2>Satisfaction guaranteed</h2></li>
+                    <li>
+                        <img src="shop.png">
+                        <h2>Multiple stores across India</h2>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <hr style="margin-left: 50px;margin-right: 50px;color: ivory;">
+        <div class="wrapper">
+            <section id="products">
+                <center><b>
+                <h2 style="font-size: 50px;color: black;">Our Products</h2>
+                </b></center>
+                <ul>
+                    <li>
+                        <img src="https://www2.aston.ac.uk/migrated-assets/imagejpeg/sport/164601-photo1.jpg">
+                        <h2>Football</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie, sem vitae gravida pellentesque, erat quam hendrerit erat, eu hendrerit.</p>
+                    </li>
+                    <li>
+                        <img src="OIP (5).jpg">
+                        <h2>Tennis Racket</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie, sem vitae gravida pellentesque, erat quam hendrerit erat, eu hendrerit.</p>
+                    </li>
+                    <li>
+                        <img src="R.jpg">
+                        <h2>Weights</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie, sem vitae gravida pellentesque, erat quam hendrerit erat, eu hendrerit.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <section id="contact">
+                <ul>
+                    <h3>Get in Touch</h3>
+                    <li> Email ID - kanishka.singh.queen@gmail.com</li>
+                    <li>GitHub username - KanishkaSingh27</li>
+                    <li>Codepen username - KanishkaSingh27</li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    </body>
+</html>
